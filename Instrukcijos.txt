@@ -1,0 +1,33 @@
+Prieš paleidžiant:
+Jeigu leidžiamas .jar failas:
+Užtikrinti kad Data aplankas yra toje pačioje direktorijoje kur ir .jar failas ir Data aplanke yra norimi duomenų failai
+
+Jeigu leidžiama iš IDE:
+Išlaikyti tą pačią struktūrą kaip yra archyvuotame .zip aplanke, kad būtų randamas Data aplankas tame pačiame aplanke kur ir src aplankas
+-------------------------------------------
+Paleidimas:
+Jar:
+Per terminalą (arba cmd ar kitą shell) nueiti į failo direktoriją ir parašyti:
+java -jar InternshipTask.jar
+arba
+java -jar (jar failas su direktorija pvz C://users/vartotojas/Desktop/IntershipTask.jar )
+
+Arba tiesiog paleisti per IDE projektą (naudojau Eclipse, nesu tikras dėl kitų IDE, bet manau turėtų eiti importuoti projektą)
+
+-------------------------------------------
+Naudojimosi instrukcija paleidus sistemą:
+Visos instrukcijos nurodomos vykdymo metu, kylančios klaidos ar kiti dalykai taip pat parašomi konsolėje.
+
+- Paleidus sistema prašoma įrašyti failo pavadinimą (Nereikia nurodyti .csv, rašyti pvz: sample);
+- Pasirinkti vieną iš keturių variantų: 1 - pakeisti failą, 2 - atrinkti pagal prekių kiekį, 3 - atrinkti pagal galiojimo datą, exit - sustabdyti sistemą;
+- Po kiekvieno pasirinkto varianto įvykdymo kartojamas pasirinkimas, tol kol sistema išjungiama arba parašoma "exit";
+
+Pasirinkus 2 variantą (atrinkti pagal prekių kiekį):
+- Prašoma įvesti prekių kiekį, tai yra sveikasis skaičius
+- Gaunamas sąrašas su prekėmis kurių kiekis nėra pakankamas
+- Iš naujo rodomas variantų pasirinkimas
+
+Pasirinkus 3 variantą (atrinkti pagal prekių galiojimo pabaigą):
+- Prašoma įvesti datą (formatas yyyy-mm-dd) pagal kurią atrenkamos iki tos datos turinčios galiojimo pabaigą prekės.
+- Gaunamas sąrašas su prekėmis kurių galiojimo data mažesnė už pasirinktą
+- Iš naujo rodomas variantų pasirinkimas
